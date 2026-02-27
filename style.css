@@ -1,0 +1,152 @@
+/* Reset & Base */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Utility Classes */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 40px;
+}
+
+.bg-light {
+    background-color: #f4f4f4;
+}
+
+.bg-accent {
+    background-color: azure;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 8px 15px;
+    color: #222;
+}
+
+nav a:hover {
+    background: #222;
+    color: white;
+}
+header .container {
+    padding: 20px 40px;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+}
+
+/* Buttons */
+.btn {
+    background: #222;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #444;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 1 30%;
+    background: white;
+    padding: 40px 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.card:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Split Layout */
+.split {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.split > div {
+    flex: 1;
+}
+
+/* Content Box */
+.content-box {
+    background: azure;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+/* Features */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.feature-card {
+    flex: 1 1 30%;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .split {
+        flex-direction: column;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+}
